@@ -1,36 +1,37 @@
-const shareButton = document.getElementById("sharebutton")
+const sharebutton = document.getElementById("sharebutton")
+const savebutton = document.getElementById("savebutton")
 let x = 0
 let y = 0
 let velocityX = 3
 let velocityY = 2
+const button = sharebutton
+function LocationCalculation() {
+    x = x + velocityX * 3
+    x = x - 4
+    y = y + velocityY * 3
+    y = y - 4
 
-function AnimateElement() {
-    // Update position
-    x = x + velocityX
-    y = y + velocityY
-
-    // Get button dimensions
-    const buttonWidth = shareButton.offsetWidth
-    const buttonHeight = shareButton.offsetHeight
-
-    // Bounce off right and left edges
-    if (x + buttonWidth >= window.innerWidth || x <= 0) {
-        velocityX = -velocityX
-    }
-
-    // Bounce off top and bottom edges
-    if (y + buttonHeight >= window.innerHeight || y <= 0) {
-        velocityY = -velocityY
-    }
-
-    // Apply position
-    shareButton.style.left = x + 'px'
-    shareButton.style.top = y + 'px'
-
-    requestAnimationFrame(AnimateElement)
 }
 
-shareButton.onclick = () => {
-    shareButton.style.position = "absolute"
-    AnimateElement()
-}   
+function FWya() {
+    const textarea = document.getElementById("long-textbox")
+    textarea.value = "WOBILLY WIGGLY WOBBLILT WIGGLY HUUHU";
+    textarea.style.color = "coral";
+
+    // Download the text.     
+
+
+
+}
+
+sharebutton.onclick = () => {
+    LocationCalculation()
+    sharebutton.style.left = x + 'px'
+    sharebutton.style.top = y + 'px'
+}
+
+savebutton.onclick = () => {
+    FWya()
+
+
+}

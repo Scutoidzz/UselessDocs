@@ -1,0 +1,3 @@
+# UselessDocs
+
+# it's useless
