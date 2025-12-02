@@ -1,0 +1,15 @@
+.sharebutton {
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+
+}
+
+.sharebutton:hover {
+    background-color: black;
+
+
+}
