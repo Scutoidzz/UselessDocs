@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<!-- IMPROVEMENT: Add lang attribute for accessibility -->
 <html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Useless notepad app">
+<meta keywords="useless, meme, prank, joke">
+<title>UselessDocs</title>
 <!--UselessDocs-->
 
 <head>
-    <!-- IMPROVEMENT: Add meta charset for proper character encoding -->
-    <!-- <meta charset="UTF-8"> -->
-    <!-- IMPROVEMENT: Add viewport meta tag for mobile responsiveness -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- IMPROVEMENT: Add title tag for SEO and browser tab display -->
-    <!-- <title>Useless Mode - UselessDocs</title> -->
     <link rel="stylesheet" href="main.css">
-    <!-- IMPROVEMENT: Add 'defer' attribute to script tag for better performance -->
-    <!-- This ensures script runs after DOM is loaded -->
     <script src="logic.js"></script>
+
 </head>
 
 <body>
     <!--UI Nightmare goes here -->
-    <!-- IMPROVEMENT: Don't wrap button in anchor tag - invalid HTML -->
-    <!-- Use <a class="sharebutton">Useful Mode</a> styled as button instead -->
     <a href="usefulversion.html"><button id="usefulbutton" class="sharebutton">Useful Mode</button></a>
     <button id="savebutton" class="sharebutton">Save</button>
     <button id="sharebutton" class="sharebutton">Share</button>
-
-    <!-- IMPROVEMENT: Add label for textarea for accessibility -->
-    <!-- <label for="long-textbox">Enter your text:</label> -->
-    <!-- IMPROVEMENT: Add placeholder or aria-label -->
+    <label for"long-textbox">Type stuff...</label>
     <textarea id="long-textbox" class="long-textbox"></textarea>
 </body>
 
