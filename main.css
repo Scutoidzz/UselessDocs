@@ -4,30 +4,23 @@
     padding: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
-    width: 100%
+    width: 100%;
 }
 
 .sharebutton:hover {
     background-color: black;
-    border: 6px;
+    border: 6px solid coral;
     border-radius: 5px;
     font-size: 12px;
     transition: all 0.2s ease;
-    width: 32%
+    width: 32%;
 }
 
-
-
-input {
-    border: 2px;
-    border-radius: 3px;
-}
 
 
 #long-textbox {
     border: 2px solid black;
     border-radius: 10000000px;
-    align-self: center;
     width: 99%;
     height: 150px;
 }
@@ -42,4 +35,5 @@ input {
 
 body {
     background-color: black;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
 }

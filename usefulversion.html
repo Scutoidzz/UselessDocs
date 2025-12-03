@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<!-- IMPROVEMENT: Add lang attribute for accessibility -->
+<html lang="en">
 
 <head>
+    <!-- IMPROVEMENT: Add meta charset for proper character encoding -->
+    <!-- <meta charset="UTF-8"> -->
+    <!-- IMPROVEMENT: Add viewport meta tag for mobile responsiveness -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- IMPROVEMENT: Add meta description for SEO -->
+    <!-- <meta name="description" content="Useful note-taking application"> -->
     <title>Useful Version</title>
     <link rel="stylesheet" href="alternatestylesheet.css">
     <script src="usefulversion.js" defer></script>
 </head>
 
 <body>
+    <!-- IMPROVEMENT: Don't wrap button in anchor tag - it's invalid HTML and causes accessibility issues -->
+    <!-- IMPROVEMENT: Use anchor tag directly or button with onclick navigation -->
     <a href="main.html"><button id="uselessbutton" class="sharebutton">Useless Mode</button></a>
     <button id="savebutton" class="sharebutton">Save</button>
     <button id="sharebutton" class="sharebutton">Share</button>
+    
+    <!-- IMPROVEMENT: Add label for textarea for accessibility -->
+    <!-- <label for="long-textbox">Enter your notes:</label> -->
+    <!-- IMPROVEMENT: Add placeholder text to guide users -->
+    <!-- IMPROVEMENT: Add aria-label for screen readers -->
     <textarea id="long-textbox" class="long-textbox"></textarea>
+    
+    <!-- IMPROVEMENT: Add label for dropdown for accessibility -->
+    <!-- <label for="dropdown">Choose theme:</label> -->
+    <!-- IMPROVEMENT: Option values don't match JavaScript expectations -->
+    <!-- Change value="option1" to value="white" etc. to match JS switch cases -->
+    <select id="dropdown">
+        <option value="option1" id="white">White</option>
+        <option value="option2" id="coral">Coral</option>
+        <option value="option3" id="mint">Mint</option>
+        <!-- IMPROVEMENT: IDs on options are unusual - typically IDs go on the select -->
+    </select>
 </body>
 
 </html>
